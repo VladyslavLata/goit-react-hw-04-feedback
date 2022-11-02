@@ -1,5 +1,4 @@
 import { Box } from 'components/Box/Box';
-import PropTypes from 'prop-types';
 
 export const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => (
   <Box as="ul" display="flex" flexDirection="column" gridGap={4} fontSize="s">
@@ -10,11 +9,3 @@ export const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => (
     <li key="PositiveFeedback">{`Positive feedback: ${positiveFeedback}%`}</li>
   </Box>
 );
-
-Statistics.propTypes = {
-  good: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired,
-  positiveFeedback: PropTypes.number.isRequired,
-};
