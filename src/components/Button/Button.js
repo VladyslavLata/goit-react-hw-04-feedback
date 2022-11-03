@@ -12,8 +12,3 @@ export const Button = ({ option, onAddFeedback }) => (
     {firstLetterUpperCase(option)}
   </ButtonFB>
 );
-
-Button.propTypes = {
-  option: PropTypes.string.isRequired,
-  onAddFeedback: PropTypes.func.isRequired,
-};
